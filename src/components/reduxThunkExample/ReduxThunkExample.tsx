@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "src/store";
 import { getPostApi } from "src/store/features/postSlice";
 

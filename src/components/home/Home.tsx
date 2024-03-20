@@ -3,6 +3,7 @@ import MuiExample from "src/components/muiExample/MuiExample";
 import I18Example from "src/components/i18Example/I18Example";
 import { useState, ReactNode } from "react";
 import styles from "./Home.module.css";
+import { Button } from "@mui/material";
 
 type ExampleComponent = {
   component: ReactNode;
@@ -25,6 +26,7 @@ const Home = () => {
       <div className={styles.container}>
         <h1 className={styles["container__heading--size"]}>Welcome to Simform&apos;s Boilerplate</h1>
         <img src="https://ik.imagekit.io/ashishkk22/react.svg" alt="react logo" width={200} />
+        <Button variant="contained">Home</Button>
       </div>
       {Components.length > 0 && (
         <div className={styles.exContainer}>
